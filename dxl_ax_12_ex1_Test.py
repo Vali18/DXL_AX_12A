@@ -62,8 +62,7 @@ def torqueEnable(id, value):
         print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
     elif dxl_error != 0:
         print("%s" % packetHandler.getRxPacketError(dxl_error))
-Password:
-raspberry
+
 
 def servoRead(id):
     dxl_present_position, dxl_comm_result, dxl_error = packetHandler.read2ByteTxRx(portHandler, id, ADDR_AX_PRESENT_POSITION)
